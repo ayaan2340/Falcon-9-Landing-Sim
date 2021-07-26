@@ -4,17 +4,38 @@
   border: 3px solid green;
   padding: 10px;
 }*/
-:root {
-  --xpos: 47%;
-  --ypos: 37%;
-}
-
 body {
   background-image: url(/Media/background.jpg);
   background-repeat: no-repeat;
   background-position: 47% 37%;
+  font-family: "Lucida Console", "Courier New", monospace !important;
 }
 
-@keyframes background {
-  to {background-position: var(--xpos, --ypos)}
+.navbar {
+  background-image: radial-gradient(ellipse at bottom, rgba(50, 50, 50, 0.5) 0%, rgba(0, 0, 0, 0) 60%);
+  color:  rgba(0, 0, 0, 0.9);
+  margin: 20px 30vw;
+}
+
+.navbar-brand {
+  font-size: 2vw !important;
+}
+
+.btn-dark {
+  position: fixed;
+  bottom: 20px;
+  left: 40%;
+  right: 40%;
+  background-color: black !important;
+}
+
+.desc {
+  
+  padding: 10px;
+  margin: 40px 25vw;
+  border: 10px solid;
+  border-radius: 0 0 20px 20px;
+  border-image: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0)) 30;
+  background-image: radial-gradient(ellipse at top, rgba(50, 50, 50, 0.7) 0%, rgba(50, 50, 50, 0.1) 100%);
+  color: white;
 }
