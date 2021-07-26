@@ -1,10 +1,20 @@
 /*.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-  }*/
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}*/
+:root {
+  --xpos: 47%;
+  --ypos: 37%;
+}
 
-  .navbar-brand {
-    text-align: center !important;
-  }
+body {
+  background-image: url(/Media/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 47% 37%;
+}
+
+@keyframes background {
+  to {background-position: var(--xpos, --ypos)}
+}
