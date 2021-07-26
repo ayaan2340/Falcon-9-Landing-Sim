@@ -30,12 +30,11 @@ body {
 }
 
 .desc {
-  
   padding: 10px;
   margin: 40px 25vw;
   border: 10px solid;
   border-radius: 0 0 20px 20px;
-  border-image: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0)) 30;
+  border-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0)) 30;
   background-image: radial-gradient(ellipse at top, rgba(50, 50, 50, 0.7) 0%, rgba(50, 50, 50, 0.1) 100%);
   color: white;
 }
