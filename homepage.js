@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('touchmove', () => {
         document.body.style.animation = 'panning 25s infinite ease-out';
     });
-    document.getElementsByClassName('.slide-in').toggleClass('show');
 });
 
 function getXYPos (event) {
