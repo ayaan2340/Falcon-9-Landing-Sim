@@ -6,8 +6,7 @@
 }*/
 body {
   background-image: url(/Media/background.jpg);
-  background-repeat: no-repeat;
-  background-position: 47% 37%;
+  background-position: 49% 37%;
   font-family: "Lucida Console", "Courier New", monospace !important;
 }
 
@@ -37,4 +36,16 @@ body {
   border-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0)) 30;
   background-image: radial-gradient(ellipse at top, rgba(50, 50, 50, 0.7) 0%, rgba(50, 50, 50, 0.1) 100%);
   color: white;
+}
+
+@keyframes panning {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 80%
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
