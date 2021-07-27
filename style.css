@@ -8,6 +8,7 @@ body {
   background-image: url(/Media/background.jpg);
   background-position: 49% 37%;
   font-family: "Lucida Console", "Courier New", monospace !important;
+  overflow: hidden;
 }
 
 .navbar {
@@ -18,7 +19,7 @@ body {
 
 .slide-in {
   visibility: hidden;
-  animation: slide 0.5s ease;
+  animation: slide 1s ease;
   visibility: visible;
 }
 
@@ -59,7 +60,7 @@ body {
 @keyframes slide {
   0% {
     visibility: visible;
-    transform: translateX(100%);
+    transform: translateX(150%);
   }
   100% {
     transform: translateX(0);
