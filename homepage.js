@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function getXYPos (event) {
-    XPercent = ((event.screenX - window.screen.availLeft) / window.screen.width * 50) + 24;
-    YPercent = ((event.screenY - window.screen.availTop) / window.screen.height * 50) + 18;
+    XPercent = ((event.screenX - window.screen.availLeft) / window.screen.width * 100);
+    YPercent = ((event.screenY - window.screen.availTop) / window.screen.height * 65) + 9;
 }
