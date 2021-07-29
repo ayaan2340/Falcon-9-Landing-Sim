@@ -19,8 +19,7 @@ body {
 
 .slide-in {
   visibility: hidden;
-  animation: slide 1.5s ease;
-  animation-delay: 2s;
+  animation: slide 3s ease;
   visibility: visible;
 }
 
@@ -60,8 +59,12 @@ body {
 
 @keyframes slide {
   0% {
+    visibiility: hidden;
+    transform: translateX(400%);
+  }
+  50% {
     visibility: visible;
-    transform: translateX(200%);
+    transform: translateX(400%);
   }
   100% {
     transform: translateX(0);
