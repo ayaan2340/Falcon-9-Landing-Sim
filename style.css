@@ -5,8 +5,8 @@
   padding: 10px;
 }*/
 body {
-  background-image: url(/Media/background.jpg);
-  background-position: 49% 37%;
+  background-image: url(Media/background.jpg);
+  background-position: 47% 42%;
   font-family: "Lucida Console", "Courier New", monospace !important;
   overflow: hidden;
 }
@@ -19,7 +19,7 @@ body {
 
 .slide-in {
   visibility: hidden;
-  animation: slide 1s ease;
+  animation: slide 3s ease;
   visibility: visible;
 }
 
@@ -59,8 +59,12 @@ body {
 
 @keyframes slide {
   0% {
+    visibiility: hidden;
+    transform: translateX(400%);
+  }
+  50% {
     visibility: visible;
-    transform: translateX(150%);
+    transform: translateX(400%);
   }
   100% {
     transform: translateX(0);
