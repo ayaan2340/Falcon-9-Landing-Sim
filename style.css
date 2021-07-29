@@ -19,7 +19,7 @@ body {
 
 .slide-in {
   visibility: hidden;
-  animation: slide 1.5s ease;
+  animation: 1s slide 1.5s ease;
   visibility: visible;
 }
 
