@@ -8,14 +8,13 @@ public class RocketMovement : MonoBehaviour
     void Update()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        Vector3 vertical = new Vector3(-0.4f*(rb.rotation), 0f, 0f);
         if (Input.GetKey(KeyCode.W))
-            rb.AddForce(vertical);
+            rb.AddRelativeForce(Vector3.up * 10f);
         if (Input.GetKey(KeyCode.A)) 
             rb.MoveRotation(rb.rotation + 0.5f);
         if (Input.GetKey(KeyCode.D))  
-            rb.MoveRotation(rb.rotation + -0.5f);
+            rb.MoveRotation(rb.rotation + (-0.5f));
         if(Input.GetKey(KeyCode.S))
-            rb.AddForce(-vertical);
+            rb.AddRelativeForce(-(Vector3.up * 10f));
     } 
 }
