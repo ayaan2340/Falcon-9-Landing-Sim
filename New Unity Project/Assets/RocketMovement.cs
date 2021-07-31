@@ -17,8 +17,8 @@ public class NewBehaviourScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
             transform.position += transform.up * Time.deltaTime * 10f;
         if (Input.GetKey(KeyCode.A)) 
-            rb.rotation += 0.25f ;
+            rb.MoveRotation(rb.rotation + 0.25f * Time.deltaTime);
         if (Input.GetKey(KeyCode.D))  
-            rb.rotation += -0.25f;
+            rb.MoveRotation(rb.rotation + -0.25f * Time.deltaTime);
     }       
 }
