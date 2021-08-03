@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
     }
     void Update()
     {
-        transform.position = new Vector3 (Mathf.Clamp(player.position.x, 0, 32), Mathf.Clamp(player.position.y, 0, 15), -1);
+        transform.position = new Vector3 (Mathf.Clamp(player.position.x, 0.0f, 32.5f), Mathf.Clamp(player.position.y, 0.0f, 14.6f), -1);
         transform.rotation = myRotation;
     }
 }
