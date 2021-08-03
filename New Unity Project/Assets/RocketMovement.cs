@@ -11,7 +11,7 @@ public class RocketMovement : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.centerOfMass = CenterOfMass2;
         if (Input.GetKey(KeyCode.W))
-            rb.AddRelativeForce(Vector3.up * 20f);
+            rb.AddRelativeForce(Vector3.up * 15f);
         if (Input.GetKey(KeyCode.A)) 
             rb.MoveRotation(rb.rotation + 0.5f);
         if (Input.GetKey(KeyCode.D))  
