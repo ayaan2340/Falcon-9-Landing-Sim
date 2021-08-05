@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
         getXYPos(event);
         document.body.style.backgroundPosition = XPercent.toString() + "% " + YPercent.toString() + "%";
     });
-    document.addEventListener('touchmove', () => {
-        document.body.style.animation = 'panning 25s infinite ease-out';
-    });
 });
 
 function getXYPos (event) {
