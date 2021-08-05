@@ -13,8 +13,8 @@ public class RocketMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
             rb.AddRelativeForce(Vector3.up * 15f);
         if (Input.GetKey(KeyCode.A)) 
-            rb.MoveRotation(rb.rotation + 0.5f);
+            rb.AddTorque(0.25f);
         if (Input.GetKey(KeyCode.D))  
-            rb.MoveRotation(rb.rotation + (-0.5f));
+            rb.AddTorque(-0.25f);
     } 
 }
