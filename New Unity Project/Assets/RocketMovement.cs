@@ -6,6 +6,10 @@ public class RocketMovement : MonoBehaviour
 { 
     // Update is called once per frame
     public Vector3 CenterOfMass2;
+    void Start()
+    {
+
+    }
     void Update()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
